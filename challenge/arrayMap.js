@@ -33,6 +33,3 @@ const targetsum = 17;
 console.log(findSubarrayWithTargetSum(myarray, targetsum));
 
 
-//   2.coding challenge 2
-
-
