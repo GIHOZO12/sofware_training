@@ -22,6 +22,6 @@ function ChangeString(str) {
   function reverseString(str) {
     return str.split('').reverse().join('');
   }
-  console.log(ChangeString("Hamburger")); // Output: "regrubmaH"
-console.log(ChangeString("Pizza")); // Output: "80 105 122 122 97"
-console.log(ChangeString("Chocolate Chip Cookie")); // Output: "eikooCpihCetalocohC"
+  console.log(ChangeString("mugishadel")); // Output: "ledahsigum"
+console.log(ChangeString("smail")); // Output: "80 105 122 122 97"
+console.log(ChangeString("banana is food")); // Output: "doofsiananab"

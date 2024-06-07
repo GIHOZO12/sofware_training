@@ -8,17 +8,17 @@
 function findSubarrayWithTargetSum(array, targetSum) {
     let start = 0;
     let end = 0;
-    let currentSum = 0;
+    let Sum = 0;
   
     while (end < array.length) {
       currentSum += arr[end];
   
       while (currentSum > targetSum) {
-        currentSum -= arr[start];
+        Sum -= arr[start];
         start += 1;
       }
   
-      if (currentSum === target) {
+      if (Sum === target) {
         return true;
       }
   

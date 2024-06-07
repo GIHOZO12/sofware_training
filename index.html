@@ -10,28 +10,29 @@
     <div class="image-content">
         <div class="image-liste">
             <div class="image">
-                <img src="images/fox.jpg" alt="">
+                <img  class="image-click" src="images/fox.jpg" alt="">
                 <div class="layer">
                     <h2>FENNEC<br>FOX</h2>
                     <P>India</P>
                 </div>
             </div>
             <div class="image">
-                <img src="images/pagie-page-UaaHbkk40Ow-unsplash.jpg" alt="" width="100%">
+                <img class="image-click1" src="images/pagie-page-UaaHbkk40Ow-unsplash.jpg" alt="" >
                 <div class="layer">
                     <h2>HUMPBACK<br>WHALE</h2>
                     <P>South africa</P>
                 </div>
             </div>
             <div class="image">
-                <img src="images/Bobbon.jpg" alt="">
+                <img class="image-click2" src="images/Bobbon.jpg" alt="">
                 <div class="layer">
                     <h2>COMMON BROWN<br>BABOON</h2>
                     <P>South africa</P>
                 </div>
             </div>
             <div class="image">
-                <img src="images/Deer.jpg" alt="">
+                <img   class="image-click3"  id ="change"  src="images/Deer.jpg" alt="">
+              
                 <div class="layer">
                     <h2>SPOTTED<br>DEER</h2>
                     <P>Amazon</P>
@@ -39,5 +40,52 @@
             </div>
         </div>
     </div>
+<!-- web interactivity on image..... -->
+    <script>
+   
+  let changeImage=document.querySelector('.image-click');
+  changeImage.addEventListener('click',()=>{
+
+    if(changeImage.style.transform===""){
+        changeImage.style.transform="translateX(50%)";
+    }
+    else{
+        changeImage.style.transform="";
+    }
+  })
+  let changeImage1=document.querySelector('.image-click1');
+  changeImage1.addEventListener('click',()=>{
+
+    if(changeImage1.style.transform===""){
+        changeImage1.style.transform="translateX(20%)";
+    }
+    else{
+        changeImage1.style.transform="";
+    }
+  })
+  let changeImage2=document.querySelector('.image-click2');
+  changeImage2.addEventListener('click',()=>{
+
+    if(changeImage2.style.transform===""){
+        changeImage2.style.transform="translateY(10%)";
+    }
+    else{
+        changeImage2.style.transform="";
+    }
+  })
+  let changeImage4=document.querySelector('.image-click3');
+  changeImage4.addEventListener('click',()=>{
+
+    if(changeImage4.style.transform===""){
+        changeImage4.style.transform="translateY(70%)";
+    }
+    else{
+        changeImage4.style.transform="";
+    }
+  })
+
+ 
+
+    </script>
 </body>
 </html>
